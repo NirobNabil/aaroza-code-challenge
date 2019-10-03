@@ -1,0 +1,38 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Roboto';
+        }
+        .response table{
+            border-collapse: collapse;
+        }
+        .response td{
+            padding: .7em;
+            border: 1px solid #222222;
+        }
+        .title{
+            font-weight: bold !important;
+            font-size: 1.5em !important;
+            color: green;
+        }    
+    </style>
+</head>
+
+<body>
+    <a href="/">home</a><br>
+    <a id="countries" href="/countries/" target="_blank">countres/</a><br>
+    <span>countres/</span><input id="countryname" type="text">
+    <a id="country" href="/countries/" target="_blank">countries/bangladesh</a>
+
+    <div class="response_container">
+        <div class="response">
+            <table>
+                <tr><td>countrynames</td><td>language</td><td>native</td></tr>
+                <tr><td>bangladesh</td><td>english</td><td>bangla</td></tr>
+                <tr><td>india</td><td>english</td><td>hindi</td></tr>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>

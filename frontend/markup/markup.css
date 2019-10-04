@@ -1,0 +1,95 @@
+/* didnt implement responsivensss
+   chrome probably has some problems with the vw unit when using the dev tools responsiveness check utility */
+
+/* text standard sizes */
+h1{ font-size: 3em }
+h2{ font-size: 2em }
+h3{ margin:0; font-size: 1.6em; font-family: 'raleway'}
+h4{ font-size: 1.2em }
+h5{ font-size: 1em }
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: #DEDEDE;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    padding: inherit;
+}
+
+.nav{
+    margin-top: 4em;
+    position: relative;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    color: #DEDEDE;
+    justify-content: space-between;
+}
+
+.nav div{
+    margin: 0 3em;
+}
+
+.nav .links{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.nav .links a{
+    padding: 1em;
+}
+
+.landing_container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    min-width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.3);
+}
+
+.landing_container .background img{
+    min-width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%); /* using this transfor for centering the background when the browser window is resized*/
+}
+
+.landing_container .landing_texts_container{
+    margin-top: 8rem;
+    margin-left: 3rem;
+    max-width: 45rem;
+}
+
+
+.landing_container .landing_texts_container #line3{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.landing_container .email_container input[type=text],button{
+    font-size: 1em;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: .7rem;
+    width: 20rem;
+}
+
+.landing_container .email_container .submit_button{
+    background: #f55f5f;
+    color: #FEFEFE;
+    width: 13rem;
+}
